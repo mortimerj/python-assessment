@@ -3,7 +3,7 @@ from flask_swagger_ui import get_swaggerui_blueprint
 from flask_cors import CORS
 import create_db
 
-import sqlite3#
+import sqlite3
 import json
 
 app = Flask(__name__)
@@ -46,6 +46,7 @@ def dict_factory(cursor, row):
 # I attempted using json.loads() and json.dumps() but cannot seem to retrieve this data for insertion
 # I have left my coding below to demonstrate understanding of form data, HTTP requests and SQL CRUD
 # I can get the app to run but not the below app.routes() unfortunately
+
 
 @app.route("/api/people", methods=["GET"])
 def getall_people():
